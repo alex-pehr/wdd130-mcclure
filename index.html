@@ -2,215 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-
-    <style>
-        /* BASIC LAYOUT */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f4f4f4;
-        }
-
-        header, footer {
-            background: #222;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-
-        /* NAVBAR */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: white;
-        }
-
-        /* PAGE SECTIONS */
-        section {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .hero img {
-            width: 100%;
-            height: 250px;
-            background: #ccc;
-            object-fit: cover;
-        }
-
-        .cards-section {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .card {
-            flex: 1;
-            height: 120px;
-            background: #ddd;
-            border-radius: 8px;
-        }
-
-        /* BESTIARY MENU */
-        .entry-grid {
-            display: flex;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .entry-card {
-            width: 100%;
-            height: 150px;
-            background: #ddd;
-            border-radius: 10px;
-            display: block;
-        }
-
-        .more-coming {
-            margin-top: 20px;
-            text-align: center;
-            font-style: italic;
-        }
-
-        /* BESTIARY ENTRY */
-        .entry-img, .map-img {
-            width: 100%;
-            height: 200px;
-            background: #ccc;
-            object-fit: cover;
-        }
-
-        h1, h2 {
-            margin-top: 25px;
-        }
-
-        /* PAGE DIVIDERS */
-        .page-divider {
-            margin: 40px 0;
-            height: 3px;
-            background: #777;
-            border-radius: 3px;
-        }
-
-    </style>
-
+    <title>Stranger Than Fiction: Cryptids Among Us</title>
 </head>
 <body>
 
-<!-- ========== HOME PAGE ========== -->
-<header>
-    <nav class="navbar">
-        <div class="logo">LOGO</div>
-
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#bestiary">Bestiary</a></li>
-            <li><a href="#aboutteam">About the Team</a></li>
-        </ul>
+<header id="main-header">
+    <h1>STRANGER THAN FICTION:<br>CRYPTIDS AMONG US</h1>
+    <nav id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="bestiary.html">Bestiary</a>
     </nav>
 </header>
 
-<section id="home" class="hero">
-    <img src="" alt="Hero Image Placeholder">
+<main>
+
+<section id="about-us">
+    <h2>About Us</h2>
+
+    <article class="bio">
+        <h3>Derek Von Stone – Lead Field Adventurer</h3>
+        <p>
+            As the team’s expedition leader, I bring years of hands-on experience navigating some of 
+            the world’s most remote and treacherous landscapes. After earning my degree in Applied 
+            Exploration Sciences—yes, it’s a real program, and yes, I graduated top of my class—I 
+            committed myself to charting the blank spaces on the map that most researchers only 
+            theorize about. My specialty lies in on-site identification, tracking, and retrieval 
+            of data on elusive species, and I’ve built a reputation for charging head-first into 
+            the unknown with confidence, precision, and a healthy disregard for the phrase 
+            “not recommended.” Whether scaling cliffs or pushing through unmapped forests, I thrive 
+            where the ordinary ends, making me uniquely qualified to lead our search for cryptids 
+            hiding just beyond the edges of civilization.
+        </p>
+    </article>
+
+    <article class="bio">
+        <h3>Gladys White – Biological Research Specialist</h3>
+        <p>
+            I’ve devoted my career to understanding the marvelous complexities of life, from the 
+            smallest cellular processes to the staggering diversity of animal physiology. With a 
+            master’s degree in Integrative Biology and several years of field-lab hybrid research 
+            experience, I focus on documenting and analyzing the biological traits of the 
+            extraordinary organisms our team encounters. What excites me most is uncovering how 
+            these unfamiliar creatures function—how they move, adapt, survive, and thrive in 
+            environments we’re only beginning to understand. I approach every discovery with 
+            scientific rigor and genuine enthusiasm, ensuring that each specimen we encounter is 
+            studied with care, curiosity, and a deep respect for the remarkable systems at work 
+            within them.
+        </p>
+    </article>
+
+    <article class="bio">
+        <h3>Dr. Frank Erickson – Environmental Ecologist</h3>
+        <p>
+            As the team’s environmental specialist, my work centers on understanding how newly 
+            documented species interact with their surrounding ecosystems. I hold a PhD in Ecology 
+            and Environmental Systems, and my research for the past decade has focused on habitat 
+            dynamics, food-web modeling, and ecological resilience. Whenever our expeditions 
+            uncover a previously unknown organism, my role is to investigate the environmental 
+            conditions that support it and determine how it fits into—or disrupts—the broader 
+            ecological balance. I take a measured, evidence-driven approach to every field study, 
+            ensuring that our findings contribute not only to scientific knowledge but also to a 
+            deeper understanding of the hidden connections that shape our natural world.
+        </p>
+    </article>
+
 </section>
 
-<section>
-    <h2 id="aboutteam">About the Team</h2>
-    <p>Placeholder text describing the team and mission.</p>
+</main>
 
-    <div class="cards-section">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-    </div>
-</section>
-
-<footer>
-    <p>© 2025 Your Site Name</p>
-</footer>
-
-<div class="page-divider"></div>
-
-<!-- ========== BESTIARY MENU PAGE ========== -->
-<header>
-    <nav class="navbar">
-        <div class="logo">LOGO</div>
-
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#bestiary">Bestiary</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section id="bestiary" class="bestiary-menu">
-    <h1>Bestiary</h1>
-
-    <div class="entry-grid">
-        <a class="entry-card" href="#entry"></a>
-        <a class="entry-card" href="#entry"></a>
-        <a class="entry-card" href="#entry"></a>
-    </div>
-
-    <div class="more-coming">More Coming Soon</div>
-</section>
-
-<footer>
-    <p>© 2025 Your Site Name</p>
-</footer>
-
-<div class="page-divider"></div>
-
-<!-- ========== BESTIARY ENTRY PAGE ========== -->
-<header>
-    <nav class="navbar">
-        <div class="logo">LOGO</div>
-
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#bestiary">Bestiary</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section id="entry" class="entry-page">
-    <h1 class="entry-title">Creature Name</h1>
-
-    <img src="" class="entry-img" alt="Creature Image Placeholder">
-
-    <h2>Map</h2>
-    <img src="" class="map-img" alt="Map Placeholder">
-
-    <h2>Biology / Environment</h2>
-    <p>Placeholder text describing habitat, behavior, and biological traits.</p>
-
-    <h2>Encounter Info</h2>
-    <p>Details about how the creature behaves when encountered.</p>
-</section>
-
-<footer>
-    <p>© 2025 Your Site Name</p>
+<footer id="site-footer">
+    <h4>Contact Us:</h4>
+    <p>(333) 999-4040</p>
+    <p><a href="https://youtu.be/dQw4w9WgXcQ">strangerthanfiction@gmail.com</a></p>
 </footer>
 
 </body>
