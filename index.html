@@ -3,9 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website</title>
+
+    <style>
+        /* BASIC LAYOUT */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+        }
+
+        header, footer {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* PAGE SECTIONS */
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 250px;
+            background: #ccc;
+            object-fit: cover;
+        }
+
+        .cards-section {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .card {
+            flex: 1;
+            height: 120px;
+            background: #ddd;
+            border-radius: 8px;
+        }
+
+        /* BESTIARY MENU */
+        .entry-grid {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .entry-card {
+            width: 100%;
+            height: 150px;
+            background: #ddd;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .more-coming {
+            margin-top: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        /* BESTIARY ENTRY */
+        .entry-img, .map-img {
+            width: 100%;
+            height: 200px;
+            background: #ccc;
+            object-fit: cover;
+        }
+
+        h1, h2 {
+            margin-top: 25px;
+        }
+
+        /* PAGE DIVIDERS */
+        .page-divider {
+            margin: 40px 0;
+            height: 3px;
+            background: #777;
+            border-radius: 3px;
+        }
+
+    </style>
+
 </head>
 <body>
-    Something
+
+<!-- ========== HOME PAGE ========== -->
+<header>
+    <nav class="navbar">
+        <div class="logo">LOGO</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bestiary">Bestiary</a></li>
+            <li><a href="#aboutteam">About the Team</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <img src="" alt="Hero Image Placeholder">
+</section>
+
+<section>
+    <h2 id="aboutteam">About the Team</h2>
+    <p>Placeholder text describing the team and mission.</p>
+
+    <div class="cards-section">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Your Site Name</p>
+</footer>
+
+<div class="page-divider"></div>
+
+<!-- ========== BESTIARY MENU PAGE ========== -->
+<header>
+    <nav class="navbar">
+        <div class="logo">LOGO</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bestiary">Bestiary</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="bestiary" class="bestiary-menu">
+    <h1>Bestiary</h1>
+
+    <div class="entry-grid">
+        <a class="entry-card" href="#entry"></a>
+        <a class="entry-card" href="#entry"></a>
+        <a class="entry-card" href="#entry"></a>
+    </div>
+
+    <div class="more-coming">More Coming Soon</div>
+</section>
+
+<footer>
+    <p>© 2025 Your Site Name</p>
+</footer>
+
+<div class="page-divider"></div>
+
+<!-- ========== BESTIARY ENTRY PAGE ========== -->
+<header>
+    <nav class="navbar">
+        <div class="logo">LOGO</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bestiary">Bestiary</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="entry" class="entry-page">
+    <h1 class="entry-title">Creature Name</h1>
+
+    <img src="" class="entry-img" alt="Creature Image Placeholder">
+
+    <h2>Map</h2>
+    <img src="" class="map-img" alt="Map Placeholder">
+
+    <h2>Biology / Environment</h2>
+    <p>Placeholder text describing habitat, behavior, and biological traits.</p>
+
+    <h2>Encounter Info</h2>
+    <p>Details about how the creature behaves when encountered.</p>
+</section>
+
+<footer>
+    <p>© 2025 Your Site Name</p>
+</footer>
+
 </body>
 </html>
