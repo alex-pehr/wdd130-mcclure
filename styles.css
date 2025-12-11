@@ -154,9 +154,16 @@ footer a:hover {
     padding: 0 20px;
 }
 
-.entry-img,
-.entry-map {
+.entry-imgage {
     flex: 1;
+    height: 340px;
+    background: #145C1E;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.entry-map {
+    flex: 0.8;
     height: 340px;
     background: #6BA64D;
     border-radius: 10px;
